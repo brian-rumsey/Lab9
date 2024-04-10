@@ -5,3 +5,11 @@ def encoder(password):
         else:
             num -= 7
     return password
+
+def decoder(encrypted_password):
+    for num in encrypted_password:
+        if num > 2:
+            num -= 3
+        else:
+            num += 7
+    return encrypted_password
